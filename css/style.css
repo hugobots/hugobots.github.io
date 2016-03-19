@@ -228,3 +228,9 @@ i.service-icon {
 .contact-items {
 	display: inline-block;
 }
+
+.strong-link {
+	text-decoration: none;
+	color: #535A5B;
+	font-weight: 400;
+}
