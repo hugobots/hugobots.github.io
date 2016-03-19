@@ -3,9 +3,27 @@
 	padding: 0; 
 }
 
+@font-face {
+    font-family: "montserrat-regular";
+    src: url("../fonts/Montserrat-Regular.woff") format('woff');
+    font-weight: normal;	/* font-weight of 400; */
+}
+
+@font-face {
+    font-family: "montserrat-light";
+    src: url("../fonts/Montserrat-Light.woff") format('woff');
+    font-weight: lighter;
+}
+
+
+@font-face {
+    font-family: "montserrat-semibold";
+    src: url("../fonts/Montserrat-SemiBold.woff") format('woff');
+    font-weight: 600;
+}
+
 body {
-	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	/*font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+	font-family: "montserrat-regular", Arial, sans-serif;
     font-size: 0.875rem;
     font-weight: normal;
     line-height: 1.5;
@@ -19,10 +37,15 @@ body {
 }
 
 p {
+	font-family: "montserrat-light";
 	font-weight: 200;
 	font-size: 1.15em;
 	line-height: 1.65em;
 	margin-bottom: 0.94em;
+}
+
+strong {
+	font-family: "montserrat-semibold", Arial, sans-serif;
 }
 
 .red-btn {
@@ -57,6 +80,7 @@ p {
     text-decoration: none;
     text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.125);
+    font-family: "montserrat-regular";
 }
 
 .button-primary {
@@ -71,6 +95,7 @@ p {
 h1, h2, h3, h4, h5 {
 	font-weight: 400;
 	color: #535a5b;
+	font-family: "montserrat-regular";
 }
 
 .text-center {
@@ -103,6 +128,7 @@ h1, h2, h3, h4, h5 {
 .hero-unit h1 {
 	font-size: 2.5em;
 	font-weight: 600;
+	font-family: "montserrat-semibold";
 }
 
 .hero-unit * {
@@ -144,7 +170,8 @@ h1, h2, h3, h4, h5 {
 	text-align: center;
 	margin-top: 150px;
 	font-weight: 300;
-	font-size: 30px
+	font-size: 30px;
+	font-family: "montserrat-light";
 }
 .head-divider {
 	display: block;
@@ -234,6 +261,7 @@ i.service-icon {
 .contact-item strong {
     display: block;
     font-weight: 600;
+    font-family: "montserrat-semibold", Arial, sans-serif;
     color: #535A5B;
 }
 
@@ -244,5 +272,6 @@ i.service-icon {
 .strong-link {
 	text-decoration: none;
 	color: #535A5B;
+	font-family: "montserrat-regular", Arial, sans-serif;
 	font-weight: 400;
 }
