@@ -25,6 +25,16 @@ p {
 	margin-bottom: 0.94em;
 }
 
+.red-btn {
+	border: 2px solid #DD4B39;
+	padding: 0 10px;
+	background: #DD4B39;
+}
+
+.brand a {
+	text-decoration: none;
+}
+
 .button {
 	-webkit-appearance: none;
     margin: 0;
@@ -123,6 +133,7 @@ h1, h2, h3, h4, h5 {
 	color: white;
 	display: inline-block;
 	margin: 0 10px;
+	line-height: 30px;
 }
 
 .hero-content {
@@ -209,6 +220,7 @@ i.service-icon {
 
 .contact-item a {
 	text-decoration: none;
+    color: #7D8485;
 }
 
 .contact-item .fa {
