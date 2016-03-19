@@ -230,7 +230,25 @@
 			</div>
 			<!-- /.contact-us -->
 		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('a[href*="#"]:not([href="#"])').click(function() {
+
+					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+						var target = $(this.hash);
+						target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
+						if (target.length) {
+							$('html, body').animate({
+								scrollTop: target.offset().top
+							}, 1000);
+							return false;
+						}
+					}
+				});
+			});
+		</script>
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -240,26 +258,6 @@
 		  ga('create', 'UA-75317038-1', 'auto');
 		  ga('send', 'pageview');
 
-		</script>
-		<script>
-			if(window.$) {
-				$(function() {
-					$('a[href*="#"]:not([href="#"])').click(function() {
-
-						if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-							var target = $(this.hash);
-							target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-
-							if (target.length) {
-								$('html, body').animate({
-									scrollTop: target.offset().top
-								}, 1000);
-								return false;
-							}
-						}
-					});
-				});
-			}
 		</script>
 	</body>
 </html>
