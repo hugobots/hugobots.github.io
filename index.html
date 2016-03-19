@@ -4,7 +4,6 @@
 		<meta charset="UTF-8">
 		<title>Hugobots</title>
 
-		<base href="http://www.hugobots.com">
   		<meta charset="UTF-8">
       	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -229,10 +228,13 @@
 				</div>
 			</div>
 			<!-- /.contact-us -->
+
+			<div id="back-to-top"><i class="fa fa-arrow-up"></i></div>
 		</div>
-		<script src="js/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<script type="text/javascript">
 			$(function() {
+
 				$('a[href*="#"]:not([href="#"])').click(function() {
 
 					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -247,6 +249,28 @@
 						}
 					}
 				});
+
+				if ($('#back-to-top').length) {
+				    var scrollTrigger = 100, // px
+				        backToTop = function () {
+				            var scrollTop = $(window).scrollTop();
+				            if (scrollTop > scrollTrigger) {
+				                $('#back-to-top').addClass('show');
+				            } else {
+				                $('#back-to-top').removeClass('show');
+				            }
+				        };
+				    backToTop();
+				    $(window).on('scroll', function () {
+				        backToTop();
+				    });
+				    $('#back-to-top').on('click', function (e) {
+				        e.preventDefault();
+				        $('html,body').animate({
+				            scrollTop: 0
+				        }, 700);
+				    });
+				}
 			});
 		</script>
 		<script>

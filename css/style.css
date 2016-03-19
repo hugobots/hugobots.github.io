@@ -275,3 +275,23 @@ i.service-icon {
 	font-family: "montserrat-regular", Arial, sans-serif;
 	font-weight: 400;
 }
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    width: 35px;
+    height: 35px;
+    background: #303232;
+    color: white;
+    z-index: 9999;
+    line-height: 35px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.show {
+	display: block !important;
+}
