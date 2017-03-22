@@ -140,7 +140,8 @@ section aside a, section aside input[type="submit"] {
     background: #222;
     color: #FFF;
     border-radius: .25em;
-    padding: 1.2em;
+    padding: 0.8em;
+    font-size: 14px;
 }
 
 section aside a:active, section aside a:hover {
