@@ -102,8 +102,11 @@ header img {
 }
 
 header h1 {
-    margin: 1em 0 1rem;
-    position: relative
+    margin: 1em 0 0;
+    position: relative;
+    font-weight: 700;
+    color: black;
+    font-size: 40px;
 }
 
 footer h3, header h2, section h3 {
@@ -111,7 +114,7 @@ footer h3, header h2, section h3 {
 }
 
 footer, section {
-    margin-top: 4em
+    margin: 2em;
 }
 
 footer aside, section aside {
@@ -128,8 +131,10 @@ section aside input[type="email"] {
     border: 2px solid #888;
     color: #222;
     border-radius: .25em;
-    padding: 1em;
-    width: 300px;
+    padding: 0.9em;
+    display: block;
+    width: 100%;
+    font-size: 15px;
 }
 
 section aside a, section aside input[type="submit"] {
@@ -137,11 +142,14 @@ section aside a, section aside input[type="submit"] {
     outline: 0;
     cursor: pointer;
     align-items: center;
-    background: #222;
+    background: #F15C42;
     color: #FFF;
     border-radius: .25em;
     padding: 0.8em;
     font-size: 14px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
 
 section aside a:active, section aside a:hover {
@@ -165,6 +173,11 @@ section aside a.back-end:before {
 section figure:after, section figure:before {
     background: #2c2c2c;
     content: ''
+}
+
+div#mc_embed_signup_scroll {
+    position: relative;
+    min-width: 500px;
 }
 
 section figure {
@@ -237,6 +250,13 @@ footer aside a.twitter {
     background-image: url(../img/twitter.svg)
 }
 
+p.tagline {
+    text-align: center;
+    font-size: 18px;
+    padding: 0 10px;
+    background: #ffff82;
+}
+
 @media (max-width: 768px) {
     section aside {
         -webkit-box-align: stretch;
@@ -255,7 +275,6 @@ footer aside a.twitter {
     section figure:not(:first-child) {
         margin-top: 2em
     }
-
 
     section aside input[type="submit"] {
         margin-top: 10px;
