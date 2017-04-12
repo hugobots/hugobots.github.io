@@ -257,6 +257,13 @@ p.tagline {
     background: #ffff82;
 }
 
+@media (max-width: 530px) {
+    div#mc_embed_signup_scroll {
+        position: relative;
+        min-width: 300px;
+    }
+}
+
 @media (max-width: 768px) {
     section aside {
         -webkit-box-align: stretch;
@@ -274,10 +281,6 @@ p.tagline {
 
     section figure:not(:first-child) {
         margin-top: 2em
-    }
-
-    section aside input[type="submit"] {
-        margin-top: 10px;
     }
 }
 
