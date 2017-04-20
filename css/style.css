@@ -35,8 +35,8 @@ footer aside a, section aside a:before {
 body {
     -ms-flex-align: center;
     align-items: center;
-    background: #FFF;
-    color: #222;
+    background: url('../img/bg.png');
+    color: white;
     cursor: default;
     display: flex;
     -ms-flex-direction: column;
@@ -50,7 +50,7 @@ body {
     min-height: 100vh;
     overflow-y: scroll;
     padding: 10vh 2em;
-    text-align: center
+    text-align: center;
 }
 
 a {
@@ -105,7 +105,7 @@ header h1 {
     margin: 1em 0 0;
     position: relative;
     font-weight: 700;
-    color: black;
+    color: white;
     font-size: 40px;
 }
 
@@ -128,13 +128,15 @@ footer aside, section aside a, section figure {
 }
 
 section aside input[type="email"] {
-    border: 2px solid #888;
     color: #222;
     border-radius: .25em;
-    padding: 0.9em;
+    padding: 20px;
     display: block;
     width: 100%;
     font-size: 15px;
+    box-shadow: none;
+    outline: none;
+    border: none;
 }
 
 section aside a, section aside input[type="submit"] {
@@ -142,14 +144,14 @@ section aside a, section aside input[type="submit"] {
     outline: 0;
     cursor: pointer;
     align-items: center;
-    background: #F15C42;
     color: #FFF;
     border-radius: .25em;
-    padding: 0.8em;
-    font-size: 14px;
-    position: absolute;
-    top: 5px;
-    right: 5px;
+    padding: 20px;
+    font-size: 15px;
+    background: linear-gradient(to right, rgb(224, 82, 160), rgb(241, 92, 65)) rgb(241, 92, 66);
+    display: block;
+    margin: 10px auto;
+    width: 245px;
 }
 
 section aside a:active, section aside a:hover {
@@ -254,7 +256,6 @@ p.tagline {
     text-align: center;
     font-size: 18px;
     padding: 0 10px;
-    background: #ffff82;
 }
 
 @media (max-width: 530px) {
