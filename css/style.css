@@ -35,8 +35,8 @@ footer aside a, section aside a:before {
 body {
     -ms-flex-align: center;
     align-items: center;
-    background: url('../img/bg.png');
-    color: white;
+    background: #0e2439;
+    color: #9cb3c9;
     cursor: default;
     display: flex;
     -ms-flex-direction: column;
@@ -54,7 +54,7 @@ body {
 }
 
 a {
-    color: #F73F51;
+    color: #ffffff;
     text-decoration: none;
     -webkit-transition: .3s;
     transition: .3s
