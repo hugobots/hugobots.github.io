@@ -58,15 +58,12 @@ h1 {
 .hire-me {
     display: block;
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #40069c;
-    color: white;
-    text-align: center;
-    font-size: 1.40em;
+    color: black;
+    font-size: 1.5em;
     margin-bottom: 25px;
-    padding: 5px 10px;
+    background: rgb(159, 159, 75);
+    padding: 2px 10px;
+    border-radius: 5px;
     -webkit-transition: all 200ms;
     -moz-transition: all 200ms;
     -ms-transition: all 200ms;
@@ -75,9 +72,9 @@ h1 {
 }
 
 .hire-me:hover {
+    color: rgb(17, 17, 17);
     text-decoration: none;
-    color: white;
-    background: #1c009c;
+    background: rgb(255, 255, 170);
 }
 
 .social-icons {
