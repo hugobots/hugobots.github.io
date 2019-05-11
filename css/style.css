@@ -5,7 +5,7 @@ body {
 }
 
 .hero-section {
-    margin: 100px auto;
+    margin: 80px auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,13 +13,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 6em;
+    font-size: 5em;
     margin-bottom: 15px;
     font-weight: 700;
 }
 
 .hero-section p {
-    font-size: 1.50em;
+    font-size: 1.45em;
 }
 
 ::selection {
