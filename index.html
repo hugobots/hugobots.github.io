@@ -4,114 +4,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Hugobots - be a better developer</title>
+    <title>Hugobots - Helping startups and small businesses</title>
     <meta name="description" content="Hugobots helps people become developers">
-    <meta property="og:title" content="Hugobots - be a better developer">
-    <meta property="og:description" content="Hugobots helps people become developers">
-    <meta property="og:image" content="http://hugobots.com/img/facebook.png?v2">
-    <meta property="og:url" content="http://hugobots.com/">
-    <link rel="stylesheet" href="/css/style.css?v1">
-    <script type="text/javascript">(function () {
-        var f = document.querySelectorAll("form")[0]; // eslint-disable-line no-undef
-        if (!f._avast_submit) {
-            f._avast_submit = f.submit;
-        }
-        try {
-            Object.defineProperty(f, "submit", {
-                get: function () {
-                    return function (prev_submit) {
-                        prev_submit.call(this);
-
-                        if (this._avast_inside_submit) {
-                            return;
-                        }
-                        this._avast_inside_submit = true;
-
-                        var evt = document.createEvent("CustomEvent");
-                        evt.initEvent("scriptsubmit", true, true); // bubbling & cancelable
-                        this.dispatchEvent(evt);
-
-                        delete this._avast_inside_submit;
-                    }.bind(this, this._avast_submit);
-                },
-                set: function (submitFunc) {
-                    this._avast_submit = submitFunc;
-                }
-            });
-        }
-        catch (ex) {
-            // ignored
-        }
-    })();</script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-
-<body data-feedly-mini="yes">
-<header>
-    <h1>Hugobots</h1>
-    <p class="tagline">be a better developer</p>
-</header>
-<section>
-    <h3>Let me inform you when it is ready?</h3>
-    <aside>
-
-        <div id="mc_embed_signup">
-            <form action="//kamranahmed.us9.list-manage.com/subscribe/post?u=6f57b741a6a939744f1f203a0&amp;id=fcfe3e1a27"
-                  method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                  class="validate AVAST_PAM_nonloginform" target="_blank" novalidate="">
-                <div id="mc_embed_signup_scroll">
-                    <input type="email" value="" name="EMAIL" placeholder="Email Address" class="required email"
-                           id="mce-EMAIL" required="">
-
-                    <div class="response" id="mce-error-response" style="display:none"></div>
-                    <div class="response" id="mce-success-response" style="display:none"></div>
-
-                    <div style="position: absolute; left: -5000px;"><input type="text"
-                                                                           name="b_6f57b741a6a939744f1f203a0_fcfe3e1a27"
-                                                                           tabindex="-1" value="" required=""></div>
-                    <input type="submit" value="Notify Me" name="subscribe" id="mc-embedded-subscribe"
-                           class="front-end">
-                </div>
-            </form>
+<body>
+<div class="container">
+    <div class="hero-section">
+        <h1>Kamran <span class="d-sm-none d-none d-md-none d-lg-inline-block d-md-inline-block">Ahmed</span></h1>
+        <div class="tldr">
+            <p><span class="mark">Who are you?</span> Fullstack developer with 7 Years of Experience. Running small independent firm from Berlin, Germany. You might know me from some of my <a href="https://github.com/kamranahmedse" target="_blank">opensource work</a> or <a href="https://twitter.com/kamranahmedse" target="_blank">from twitter</a>.</p>
+            <p><span class="mark">What can you do?</span> I do freelance work, provide consultancy and help startups and businesses with their digital products. I specialise in <a href="https://github.com/kamranahmedse/developer-roadmap" target="_blank">fullstack development</a>. With my expertise in frontend, backend and DevOps, I can help develop from small scale to large scale enterprise applications. In the past, I have delivered solutions in the domains of <span>ERP</span>, <span>Business Management</span>, <span>Fintech</span>, <span>Edtech</span>, Travel and E-Commerce.</p>
+            <p><span class="mark">Why should I hire you?</span> Having worked with startups, service based companies and corporates, over the past 7 years, I have gained a fine blend of expertise that help me deliver the quality products. I have architected the platforms handling millions of requests per day, developed mission critical systems, lead and managed large teams, organized workshops and have provided consultancy. Apart from the commercial work, I am quite active in the community and have developed
+                <a href="https://github.com/kamranahmedse" target="_blank">opensource projects</a> that have reached hundreds of thousands of developers. With my expertise, I can assure to provide you the service you deserve.</p>
+            <p><span class="mark">Where do you work from?</span> I work remotely and mainly operate from <span class="mark-white">Berlin or Dubai</span> but I can travel to meet you or your team if the project requires.</p>
+            <p><span class="mark">When are you available?</span> I am available for new projects right now. <a href="mailto:kamranahmed.se@gmail.com">Reach out to me!</a></p>
         </div>
-
-    </aside>
-</section>
-<section>
-    <h3>What is Hugobots?</h3>
-    <p>Hugobots is the place where we produce content for programmers while having the cognitives in mind.</p>
-    <p>You can find tons of free content similar to <a target="_blank" href="http://github.com/kamranahmedse/design-patterns-for-humans">Design Patterns for Humans</a> and this
-        <a target="_blank" href="http://github.com/kamranahmedse/developer-roadmap">Developer Roadmap</a></p>
-    <p>We are on the verge of releasing it, make sure to subscribe above and we will notify you when it is ready.</p>
-
-
-</section>
-<footer>
-    <h3>Find us on</h3>
-    <aside>
-        <a target="_blank" href="https://twitter.com/kamranahmedse" class="twitter"></a>
-        <a target="_blank" href="https://github.com/kamranahmedse" class="github"></a>
-        <a href="mailto:info@hugobots.com?Subject=Hugobots - Inquiry" class="contact-email"></a>
-    </aside>
-</footer>
+    </div>
+</div>
 
 <script async="" src="//www.google-analytics.com/analytics.js"></script>
 <script>
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
         i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
+            (i[r].q = i[r].q || []).push(arguments);
+        }, i[r].l = 1 * new Date();
         a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
+            m = s.getElementsByTagName(o)[0];
         a.async = 1;
         a.src = g;
-        m.parentNode.insertBefore(a, m)
+        m.parentNode.insertBefore(a, m);
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-75317038-1', 'auto');
     ga('send', 'pageview');
 </script>
-
-
-<div id="feedly-mini" title="feedly Mini tookit"></div>
 </body>
 </html>

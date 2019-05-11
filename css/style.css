@@ -1,312 +1,56 @@
-body, header {
-    -webkit-box-align: center
-}
-
-body, footer aside, header, section aside {
-    display: -webkit-box;
-    display: -ms-flexbox
-}
-
-body, header, section figure {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal
-}
-
-footer aside a, section aside a:before {
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 2em;
-    width: 2em
-}
-
-*, :after, :before {
-    border-radius: 0;
-    box-sizing: border-box;
-    margin: 0;
-    outline: 0;
-    padding: 0;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent
-}
-
 body {
-    -ms-flex-align: center;
-    align-items: center;
-    background: #0e2439;
-    color: #9cb3c9;
-    cursor: default;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    font: 400 .875em/1 -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin: auto;
-    max-width: 60em;
-    min-height: 100vh;
-    overflow-y: scroll;
-    padding: 10vh 2em;
-    text-align: center;
+    padding-top: 1px;
+    background: #111111;
+    color: #8a8a8a;
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-    -webkit-transition: .3s;
-    transition: .3s
+.hero-section {
+    margin: 100px auto;
 }
 
-h1, h2, h3 {
-    font-weight: 300
+h1, h2, h3, h4, h5, h6 {
+    color: #ebebeb;
 }
 
 h1 {
-    font-size: 3em
-}
-
-h2 {
-    font-size: 2em
-}
-
-h3 {
-    font-size: 1em;
-    font-weight: 400
-}
-
-img {
-    border: none;
-    max-width: 100%;
-    vertical-align: top
-}
-
-p {
-    line-height: 1.6;
-    margin: 1em auto;
-    max-width: 30em
-}
-
-header {
-    -ms-flex-align: center;
-    align-items: center;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column
-}
-
-header img {
-    height: 116px;
-}
-
-header h1 {
-    margin: 1em 0 0;
-    position: relative;
+    font-size: 6em;
+    margin-bottom: 15px;
     font-weight: 700;
+}
+
+.hero-section p {
+    font-size: 1.50em;
+}
+
+::selection {
+    background: #ffa;
+    color: black;
+}
+
+.mark {
+    text-transform: uppercase;
+    background-color: #40069c;
     color: white;
-    font-size: 40px;
-}
-
-footer h3, header h2, section h3 {
-    color: #888
-}
-
-footer, section {
-    margin: 2em;
-}
-
-footer aside, section aside {
-    display: flex;
-    margin-top: 1em
-}
-
-footer aside, section aside a, section figure {
-    display: -webkit-box;
-    display: -ms-flexbox
-}
-
-section aside input[type="email"] {
-    color: #222;
-    border-radius: .25em;
-    padding: 20px;
-    display: block;
-    width: 100%;
     font-size: 15px;
-    box-shadow: none;
-    outline: none;
-    border: none;
-}
-
-section aside a, section aside input[type="submit"] {
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-    align-items: center;
-    color: #FFF;
-    border-radius: .25em;
-    padding: 20px;
-    font-size: 15px;
-    background: linear-gradient(to right, rgb(224, 82, 160), rgb(241, 92, 65)) rgb(241, 92, 66);
-    display: block;
-    margin: 10px auto;
-    width: 245px;
-}
-
-section aside a:active, section aside a:hover {
-    background: #F73F51
-}
-
-section aside a:before {
-    background-size: 100%;
-    content: '';
-    margin-right: 1em
-}
-
-section aside a.front-end:before {
-    background-image: url(../img/brush.svg)
-}
-
-section aside a.back-end:before {
-    background-image: url(../img/gears.svg)
-}
-
-section figure:after, section figure:before {
-    background: #2c2c2c;
-    content: ''
-}
-
-div#mc_embed_signup_scroll {
+    font-weight: 600;
+    padding: 5px 10px;
     position: relative;
-    min-width: 500px;
+    top: -2px;
+    margin-right: 5px;
+    border-radius: 5px;
 }
 
-section figure {
-    background: #222;
-    border-radius: 2.25em;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    max-width: 24em;
-    padding: 0 1em
+.mark-white {
+    color: #ebebeb;
 }
 
-section figure:before {
-    border-radius: .25em;
-    height: .5em;
-    margin: 2em auto;
-    width: 4em
+.tldr a {
+    color: #ebebeb;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
 }
 
-section h3:not(:first-child) {
-    margin-top: 2em;
-}
-
-section figure:after {
-    border-radius: 100%;
-    height: 3em;
-    margin: 1em auto;
-    width: 3em
-}
-
-footer aside {
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
-}
-
-footer aside a {
-    background-size: 1.5em auto;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%)
-}
-
-footer aside a:active, footer aside a:hover {
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0)
-}
-
-footer aside a:not(:first-child) {
-    margin-left: 1em
-}
-
-footer aside a.product-hunt {
-    background-image: url(../img/product-hunt.svg)
-}
-
-footer aside a.dribbble {
-    background-image: url(../img/dribbble.svg)
-}
-
-footer aside a.github {
-    background-image: url(../img/github.svg)
-}
-
-footer aside a.contact-email {
-    background-image: url(../img/email.svg)
-}
-
-footer aside a.twitter {
-    background-image: url(../img/twitter.svg)
-}
-
-p.tagline {
-    text-align: center;
-    font-size: 18px;
-    padding: 0 10px;
-}
-
-@media (max-width: 530px) {
-    div#mc_embed_signup_scroll {
-        position: relative;
-        min-width: 300px;
-    }
-}
-
-@media (max-width: 768px) {
-    section aside {
-        -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-        align-items: stretch;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column
-    }
-
-    section aside a:not(:first-child) {
-        margin-top: 1em
-    }
-
-    section figure:not(:first-child) {
-        margin-top: 2em
-    }
-}
-
-@media (min-width: 768px) {
-    section.screens {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row
-    }
-
-    section aside {
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center
-    }
-
-    section aside a:not(:first-child) {
-        margin-left: 1em
-    }
-
-    section figure:not(:first-child) {
-        margin-left: 2em
-    }
+.tldr a:hover {
+    color: white;
 }
