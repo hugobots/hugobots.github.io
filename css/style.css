@@ -54,3 +54,32 @@ h1 {
 .tldr a:hover {
     color: white;
 }
+
+.hire-me {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #40069c;
+    color: white;
+    text-align: center;
+    font-size: 1.40em;
+    margin-bottom: 25px;
+    padding: 5px 10px;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -ms-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms;
+}
+
+.hire-me:hover {
+    text-decoration: none;
+    color: white;
+    background: #1c009c;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
